@@ -1,0 +1,98 @@
+/* Базовые стили для форм авторизации */
+.auth-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.auth-form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.auth-form input,
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.auth-form button {
+    background: #2c3e50;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+}
+
+.auth-form button:hover {
+    background: #00ff99;
+    color: #2c3e50;
+    box-shadow: 0 0 10px #00ff99;
+}
+
+/* Стили для ошибок */
+.error {
+    color: #ff4500;
+    background: rgba(255, 69, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Адаптивность форм */
+@media (max-width: 768px) {
+    .auth-form {
+        max-width: 90%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+}
+
+/* Стили для категорий (student, college, pro) */
+.student .auth-form {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border: 1px solid #2c3e50;
+}
+
+.student .auth-form button {
+    background: #2c3e50;
+    color: #fff;
+}
+
+.student .auth-form button:hover {
+    background: #00ff99;
+    color: #2c3e50;
+}
+
+.college .auth-form,
+.pro .auth-form {
+    background: rgba(10, 10, 10, 0.9);
+    color: #d3d3d3;
+    border: 1px solid #ff4500;
+}
+
+.college .auth-form button,
+.pro .auth-form button {
+    background: #ff4500;
+    color: #0a0a0a;
+}
+
+.college .auth-form button:hover,
+.pro .auth-form button:hover {
+    background: #ffa500;
+    color: #0a0a0a;
+    box-shadow: 0 0 10px #ffa500;
+}
